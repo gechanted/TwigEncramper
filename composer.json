@@ -1,0 +1,17 @@
+{
+
+  "name": "gechanted/twig-encramper",
+  "license": "MIT",
+  "version": "1.0",
+
+
+  "require": {
+    "twig/twig": "*"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "TwigEncramper\\": "src"
+    }
+  }
+}
