@@ -4,9 +4,9 @@
   "license": "MIT",
   "version": "1.0",
 
-  
+
   "require": {
-    "../twig/twig": "2.12.*"
+    "twig/twig": "2.12.*"
   },
 
   "autoload": {
