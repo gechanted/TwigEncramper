@@ -19,7 +19,7 @@ class Call
     }
 
 
-    public function __invoke(string $file, $args)
+    public function __invoke(string $file, ...$args)
     {
         return $this->twig->render($file, $args);
     }
