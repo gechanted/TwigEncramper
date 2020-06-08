@@ -21,6 +21,16 @@ class Call
 
     public function __invoke(string $file, ...$args)
     {
-        return $this->twig->render($file, $args);
+        $storage = null;
+        $result = [];
+        foreach ($args as $argument) {
+            if ($storage === null) {
+                $storage = $argument;
+            } else {
+                $result[$storage] = $argument;
+                $storage = null;
+            }
+        }
+        return $this->twig->render($file, $result);
     }
 }
